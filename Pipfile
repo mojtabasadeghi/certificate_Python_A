@@ -17,7 +17,7 @@ uvicorn = {extras = ["standard"], version = "*"}
 psycopg2 = "==2.9.3"
 lz4 = "~=4.0"
 cryptography = "==41.0.2"
-starlette = "*"
+starlette = "==0.22.0"
 
 [dev-packages]
 pre-commit = "*"
@@ -28,4 +28,4 @@ autopep8 = "*"
 ipykernel = "*"
 
 [requires]
-python_version = "3.9"
+python_version = "3.11"
