@@ -1,0 +1,31 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+dynaconf = "==3.1.5"
+opentelemetry-launcher = "==1.7.2"
+opentelemetry-instrumentation = "==0.26b1"
+opentelemetry-instrumentation-logging = "==0.26b1"
+opentelemetry-sdk = "==1.7.1"
+opentelemetry-exporter-jaeger-thrift = "*"
+protobuf = "==3.20.0"
+confluent-kafka = {version = "==1.9.2", extras = ["avro"]}
+fastapi = {version = "==0.88.0", extras = ["all"]}
+uvicorn = {extras = ["standard"], version = "*"}
+psycopg2 = "==2.9.3"
+lz4 = "~=4.0"
+cryptography = "==41.0.2"
+starlette = "*"
+
+[dev-packages]
+pre-commit = "*"
+pytest = "*"
+pytest-mock = "*"
+flake8 = "*"
+autopep8 = "*"
+ipykernel = "*"
+
+[requires]
+python_version = "3.9"

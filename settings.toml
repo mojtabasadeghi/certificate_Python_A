@@ -1,0 +1,42 @@
+[default]
+log_level = "DEBUG"
+kafka_bootstrap_servers = "broker:29092"
+kafka_security_protocol = "SASL_SSL"
+kafka_sasl_mechanisms = "PLAIN"
+kafka_sasl_username = "fake"
+kafka_sasl_password = "fake"
+kafka_raw_intake_topic = "raw.intake.v1"
+kafka_client_id = "enerji-intake"
+schema_registry_url = "http://schema-registry:8081"
+basic_auth_credentials_source = "USER_INFO"
+schema_registry_api_key = "fake"
+schema_registry_api_secret = "fake"
+swallow_messages = false
+value = "default"
+port = 8080
+DB_NAME=""
+DB_HOST=""
+DB_USER=""
+DB_PASSWORD=""
+DB_PORT=1
+db_connect_timeout = 5
+
+[remote]
+log_level = "INFO"
+kafka_bootstrap_servers = "pkc-pgq85.us-west-2.aws.confluent.cloud:9092"
+kafka_security_protocol = "SASL_SSL"
+kafka_sasl_mechanisms = "PLAIN"
+kafka_sasl_username = "fake"
+kafka_sasl_password = "fake"
+kafka_raw_intake_topic = "devel.intake.raw"
+kafka_client_id = "raw-intake-dev"
+schema_registry_url = "https://psrc-pgpdo.us-east-2.aws.confluent.cloud"
+basic_auth_credentials_source = "USER_INFO"
+schema_registry_api_key = "fake"
+schema_registry_api_secret = "fake"
+swallow_messages = false
+value = "default"
+port = 8080
+
+[testing]
+swallow_messages = true
